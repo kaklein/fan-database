@@ -27,3 +27,10 @@
     🔃 Easily update user information (besides user ID) when a record is displayed
     <br>
     ⚠️ Brief alert messages indicate whether an update was successful or not
+
+<h3>Requirements to run</h3>
+<ul>
+  <li>MySQL (run fan-database-init.sql file to initialize a sample database)</li>
+  <li>JavaFX (included in Java SE 8; for later versions, JavaFX jar files must be downloaded and referenced)</li>
+  <li>MySQL JDBC driver</li>
+ </ul>
