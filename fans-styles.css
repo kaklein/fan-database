@@ -1,0 +1,42 @@
+
+.small-padding {
+    -fx-text-align: center;
+    -fx-padding: 5;
+}
+
+.main-element {
+    -fx-border-insets: 5;
+    -fx-background-insets: 5;
+    -fx-padding: 5;
+}
+
+.id-display {
+    -fx-background-color: rgb(255, 240, 198);
+}
+
+.bottom-pane {
+    -fx-background-color: rgb(255, 225, 143);
+    -fx-background-radius: 6, 5;
+    -fx-padding: 25;
+}
+
+.all-content {
+    -fx-padding: 20;
+}
+
+.button {
+    -fx-background-color: rgb(64, 27, 112);
+
+    -fx-text-fill: white;
+
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+
+.button:hover {
+    -fx-background-color: rgb(120, 76, 177);
+    -fx-cursor: hand;
+}
+
