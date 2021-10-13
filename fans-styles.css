@@ -1,11 +1,15 @@
 .top-pane {
-    -fx-background-color: rgb(64, 27, 112);
+    -fx-background-color: black;
     -fx-padding: 15px;
 }
 
 .header-text {
     -fx-fill: white;
     -fx-font-size: 20px;
+}
+
+.white-text {
+    -fx-text-fill: white;
 }
 
 .small-padding {
@@ -20,11 +24,11 @@
 }
 
 .id-display {
-    -fx-background-color: rgb(255, 240, 198);
+    -fx-background-color: #faebc4;
 }
 
 .bottom-pane {
-    -fx-background-color: rgb(255, 225, 143);
+    -fx-background-color: #fff5db;
     -fx-background-radius: 6, 5;
     -fx-padding: 25;
 }
@@ -34,9 +38,13 @@
     -fx-padding: 20;
 }
 
+.all-content {
+    -fx-background-color: #A62639;
+}
+
 
 .button {
-    -fx-background-color: rgb(64, 27, 112);
+    -fx-background-color: black;
 
     -fx-text-fill: white;
 
@@ -47,7 +55,7 @@
 
 
 .button:hover {
-    -fx-background-color: rgb(120, 76, 177);
+    -fx-background-color: #e2324d;
     -fx-cursor: hand;
 }
 

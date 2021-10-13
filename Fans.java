@@ -106,7 +106,7 @@ public class Fans extends Application {
         // Style/format elements
         topPane.getStyleClass().add("top-pane");
         headerText.getStyleClass().add("header-text");
-        instructionLabel.getStyleClass().add("small-padding");
+        instructionLabel.getStyleClass().addAll("small-padding", "white-text");
         userIDLabel.getStyleClass().add("small-padding");
         firstNameLabel.getStyleClass().add("small-padding");
         lastNameLabel.getStyleClass().add("small-padding");
@@ -123,6 +123,7 @@ public class Fans extends Application {
         bottomPane.getStyleClass().addAll("main-element", "bottom-pane");
         displayResultsPane.getStyleClass().add("main-element");
         mainContentPane.getStyleClass().add("main-content");
+        allContentPane.getStyleClass().add("all-content");
 
         // Set scene in stage
         primaryStage.setScene(scene);
