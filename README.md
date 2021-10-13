@@ -15,19 +15,23 @@
     Include an 'Update' button which updates the currently displayed record's information in the database
   </li>
 </ul>
-  
-  
-  <hr>
-  
-  <h3>Languages</h3>
-  <p><b>Java/JavaFX | MySQL | CSS</b></p>
-  
-  <h3>Features</h3>
-    🔎 Easily search for a record by user ID
-    <br>
-    🔃 Easily update user information (besides user ID) when a record is displayed
-    <br>
-    ⚠️ Brief alert messages indicate whether an update was successful or not
+
+<p>
+  <img src="images/fan_database_display_screenshot.png" width="400">
+  <img src="images/fan_database_update_screenshot.png" width="400">
+</p>
+
+<hr>
+
+<h3>Languages</h3>
+<p><b>Java/JavaFX | MySQL | CSS</b></p>
+
+<h3>Features</h3>
+  🔎 Easily search for a record by user ID
+  <br>
+  🔃 Easily update user information (besides user ID) when a record is displayed
+  <br>
+  ⚠️ Brief alert messages indicate whether an update was successful or not
 
 <h3>Requirements to run</h3>
 <ul>
