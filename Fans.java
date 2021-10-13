@@ -23,6 +23,7 @@ import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.geometry.Pos;
+import javafx.scene.text.Text;
 
 public class Fans extends Application {
     Connection connection;
@@ -83,18 +84,28 @@ public class Fans extends Application {
         });
         updateButton.setAlignment(Pos.CENTER);
 
+        // Pane for header
+        Text headerText = new Text("FAN DATABASE");
+        StackPane topPane = new StackPane(headerText);
+
         // Panes for displayed results & Update button
         VBox bottomPane = new VBox(10);
         displayResultsPane.getChildren().addAll(displayField0, displayField1, displayField2, displayField3);
         bottomPane.getChildren().addAll(displayResultsPane, updateButton);
         bottomPane.setAlignment(Pos.CENTER);
 
+        // Pane for main content
+        VBox mainContentPane = new VBox(10);
+        mainContentPane.getChildren().addAll(selectUserPane, bottomPane);
+
         // Place all main elements in pane
-        allContentPane.getChildren().addAll(selectUserPane, bottomPane);
+        allContentPane.getChildren().addAll(topPane, mainContentPane);
         Scene scene = new Scene(allContentPane, 600, 300);
         scene.getStylesheets().add("fans-styles.css");
 
         // Style/format elements
+        topPane.getStyleClass().add("top-pane");
+        headerText.getStyleClass().add("header-text");
         instructionLabel.getStyleClass().add("small-padding");
         userIDLabel.getStyleClass().add("small-padding");
         firstNameLabel.getStyleClass().add("small-padding");
@@ -111,7 +122,7 @@ public class Fans extends Application {
         selectUserPane.getStyleClass().addAll("main-element");
         bottomPane.getStyleClass().addAll("main-element", "bottom-pane");
         displayResultsPane.getStyleClass().add("main-element");
-        allContentPane.getStyleClass().add("all-content");
+        mainContentPane.getStyleClass().add("main-content");
 
         // Set scene in stage
         primaryStage.setScene(scene);

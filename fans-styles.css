@@ -1,3 +1,12 @@
+.top-pane {
+    -fx-background-color: rgb(64, 27, 112);
+    -fx-padding: 15px;
+}
+
+.header-text {
+    -fx-fill: white;
+    -fx-font-size: 20px;
+}
 
 .small-padding {
     -fx-text-align: center;
@@ -20,9 +29,11 @@
     -fx-padding: 25;
 }
 
-.all-content {
+
+.main-content {
     -fx-padding: 20;
 }
+
 
 .button {
     -fx-background-color: rgb(64, 27, 112);
